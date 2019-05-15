@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Orientação a Objeto</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+			
+			class celular{
+
+				constructor(){ //Atributos = variáveis
+
+					this.cor = 'Prata';
+					this.tamanho = '7"';
+					this.fabricante = 'Motorola';
+					this.modelo = 'G5';
+				}
+
+				ligar(){ //Método = Funções
+
+					console.log('Ligar');
+					return 'ligando';
+
+				}
+			}
+
+			let objeto = new celular();
+			console.log(objeto.ligar());
+
+			
+		</script>
+
+	</head>
+
+	<body>
+		
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+</html>

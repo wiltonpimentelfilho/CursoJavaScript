@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minha Calculadora</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+
+			function calculadora(){
+				var operacao = document.getElementById('operacao').value;
+
+				var num1 = document.getElementById('num1').value;
+				var num2 = document.getElementById('num2').value;
+
+				if (num1 == '' || num1 == null ) {
+					alert('Digite um número válido para a operação');
+					return false;
+				}
+
+				if (num2 == '' || num2 == null ) {
+					alert('Digite um número válido para a operação');
+					return false;
+				}
+
+				num1 = parseFloat(num1);
+				num2 = parseFloat(num2);
+
+				var resultado = null;
+
+
+				switch (operacao){
+
+					case '1'://Adição
+						resultado = num1 + num2;
+						break;
+
+					case '2'://Subtração
+						resultado = num1 - num2;
+						break;
+
+					case '3'://Multiplicação
+						resultado = num1 * num2;
+						break;
+
+					case '4'://Divisão
+						resultado = num1 / num2;
+						break;
+
+					default:
+						alert('A opção selecionada é inválida!');
+						return false; // 
+
+				}
+
+				document.getElementById('resultado').value = resultado;
+
+			}
+			
+													
+		</script>
+	</head>
+
+	<body>
+
+		<div class="container-fluid"><!-- o container-fluid cria uma área responsiva que ocupa toda a tela (também conhecido como full width). -->
+
+			<div class="jumbotron"> <!-- Um componente leve e flexível que pode se extender pela viewport inteira para exibir mensagens de market, em seu site.-->
+				<h1>Calculadora JavaScript</h1>
+				<hr>
+			</div>
+			<hr>
+
+			<div class="row"><!-- Nesta 'div row' colocaremos os três campos para as classes 'form-control'-->
+				
+				<div class="col-md-4">
+					<input type="text" id="num1" class="form-control" placeholder="Digite um número">
+				</div>
+
+				<div class="col-md-4">
+					<select class="form-control" id="operacao">
+						<option value>--Selecione uma operação...</option>
+						<option value="1">Adição</option>
+						<option value="2">Subtração</option>
+						<option value="3">Multiplicação</option>
+						<option value="4">Divisão</option>
+					</select>
+				</div>
+
+				<div class="col-md-4">
+					<input type="text" id="num2" class="form-control" placeholder="Digite um número">
+				</div>
+				
+			</div>
+			<br>
+			<hr>
+			
+			<div class="row"><!-- Nesta div colocarei o botão de calcular. -->
+				<div class="col-md-4"></div>
+				<button type="button" class="btn btn-lg btn-primary" style="margin-left:120px;" onclick="calculadora()">Calcular</button>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+		<hr>
+
+			<div class="well">
+				<h4 style="margin-left:10px">Resultado</h4>
+				<input type="text" id="resultado" class="form-control"  style="margin-left:120px" readonly>
+			</div>
+			<br><br>
+
+		<footer>
+			<div class="jumbotron">
+				
+				<div class="container">	
+					<hr>				
+					<p class="texto1">Rua Dom Joaquim, 757 - Centro - CEP 88015-310 - Florianópolis - SC - Fone (48) 3721.6221</p>
+					<p class="texto2">SEaD - Secretaria de Educação a Distância (UFSC)</p>
+					<hr>
+				</div>
+				
+			</div>
+
+		</footer>				
+
+		
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+</html>

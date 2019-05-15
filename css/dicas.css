@@ -1,0 +1,20 @@
+
+
+#cabecalho { /* Nomes precedidos de "#", corresposndem aos ID´s no arquivo "html"*/
+	border: 2px solid black;
+	text-align: center;
+}
+
+.seletores{
+	border: 1px solid magenta;
+}
+
+#um{
+	margin-left: 10px;
+	color:#5E2799;
+	font-size: 14px;
+}
+
+.classesIds{
+	border: 1px solid blue;
+}

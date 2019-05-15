@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>If_Else (Controle de decisão) com Operadores Lógicos</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+			
+			document.write('If_Else com Operadores Lógicos:');
+			document.write('<br/>');
+			document.write('*************************************');
+			document.write('<br/>');
+
+			var num1 = 17;
+			var num2 = 89;
+			var num3  = 17;
+
+			if (num1 != num2 && num1 == num3) {
+				document.write('Verdadeiro!')
+			} else{
+				document.write('Falso!')
+			}
+			document.write('<br/');
+			document.write('*************************************');
+			document.write('<br/>');
+
+			if (num1 == num2 || num2 != num3) {
+				document.write('Verdadeiro!')
+			} else{
+				document.write('Falso!')
+			}
+			document.write('<br/');
+			document.write('*************************************');
+			document.write('<br/>');
+
+			if (!(2 > 1)) {
+				document.write('Verdadeiro!')
+			} else{
+				document.write('Falso!')
+			}
+			document.write('<br/');
+			document.write('*************************************');
+			document.write('<br/>');
+
+			var nota = prompt('Entre com a nota do aluno:');
+			var faltas = prompt('Digite o número de faltas do aluno:');
+			var faltas_limite = 9;
+			var media = 7;
+
+			if (nota >= media && faltas <= faltas_limite){
+					document.write('Aluno Aprovado!')
+			} 
+			else {
+				document.write('Aluno em Recuperação!')
+			}
+			document.write('<br/');
+			document.write('*************************************');
+			document.write('<br/>');
+			 
+			if (nota < media && faltas > faltas_limite) {
+				document.write('Aluno Reprovado!')
+			}
+
+
+		</script>
+	</head>
+
+	<body>
+		
+
+
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+</html>

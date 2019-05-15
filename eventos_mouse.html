@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Eventos mouse - Parte 1</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+			
+			function msgBoasVindas(){
+				document.write("Você clicou com o botão esquerdo do mouse sobre este elemento.")
+			}
+			
+						
+		</script>
+	</head>
+
+	<body>
+		
+		<div onclick='msgBoasVindas()' style="background: #0000FF; height: 150px; width: 150px"></div>
+
+		<!-- Eventos que podem ser utilizados nas ações com o mouse:
+
+			//onclick: Acionado com um clique simples do mouse.
+			//ondblclick: Espera 2 (dois) cliques sobre o elemento.
+			//onmousedown: Acionado quando o ponteiro do mouse sai do elemento.
+			//onmouseover: Acionado quando o ponteiro do mouse se sobrepõe ao elemento, sem necessidade de um clique.
+			//onmouseout: Acionado quando o ponteiro do mouse sai do elemento, sem necessidade de um clique.
+		-->
+
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+</html>

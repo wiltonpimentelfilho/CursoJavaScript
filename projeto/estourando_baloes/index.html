@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Estourando balões</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+
+		<script language='Javascript'>
+
+			function iniciaJogo(){
+				var nivel = document.getElementById('nivel').value;
+				
+				window.location.href = 'jogo.html?' + nivel;
+
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div >
+				<br>
+				<h1 style="margin-left:10px">Escolha o nível do jogo:</h1>
+				<br>
+				<select class="form-control" id="nivel" style="margin-left:120px">
+					<option value='1'>Fácil</option>
+					<option value='2'>Normal</option>
+					<option value='3'>Difícil</option>
+				</select>
+			</div>
+			<br>
+			<h2 style="margin-left:10px">Agora aperte o botão abaixo para iniciar o jogo:</h2>
+			<br>
+			<img src="imagens/play.png" height='150px' style="margin-left:40%" onclick="iniciaJogo()">
+		</div>
+
+	</body>
+	
+</html>

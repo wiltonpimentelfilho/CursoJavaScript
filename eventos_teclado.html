@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Eventos Teclado</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+			
+			function teclaPress(){
+				alert('Uma Tecla foi Pressionada');
+			}
+			
+									
+		</script>
+	</head>
+
+	<body>
+				<input type="text" onkeypress='teclaPress()' style="background-color: #000ff4; color: #fff; border: none; height: 30px; width: 100%"> 
+
+		<!-- Eventos relacionados ao Teclado:
+			 onkeydown - Acionado no momento em que uma Tecla é pressionada.
+			 onkeypress - Similar ao "onkeydown" porém não captura todas as teclas, como por exemplo, Alt, CRTL, ESC, SHIFT, Etc.
+			 onkeyup - Acionada no momento em que a tecla é liberada.
+		-->
+
+		
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+</html>

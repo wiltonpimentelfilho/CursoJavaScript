@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<title>Array Básico</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+
+			document.write("Array Simples:");
+			document.write("<br/>");
+			var lista_frutas = Array();
+
+			lista_frutas[0] = "Abacaxi";
+			lista_frutas[1] = "Banana";
+			lista_frutas[2] = "Caqui";
+			lista_frutas[3] = "Damasco";
+
+			document.write(lista_frutas[2]);
+			document.write("<br/>");
+
+			document.write("<br/>");
+
+			var lista_frutas2 = Array("Goiaba", "Maçã", "Laranja", "Uva");
+
+			document.write(lista_frutas2[0])
+			document.write("<br/>");
+			document.write("*********************************************************");
+			document.write("<br/>");
+			
+			document.write("Array Multidimensional:");
+			document.write("<br/>");
+
+			var listaCoisas = Array();
+
+			listaCoisas["frutas"] = Array();
+			listaCoisas["animais"] = Array();
+
+			listaCoisas["frutas"][0] = "Banana";
+			listaCoisas["frutas"][1] = "Maçã";
+			listaCoisas["frutas"][2] = "Mamão";
+			listaCoisas["frutas"][3] = "Laranja";
+
+			listaCoisas["animais"][0] = "Gato";
+			listaCoisas["animais"][1] = "Cachorro";
+			listaCoisas["animais"][2] = "Pássaro";
+			listaCoisas["animais"][3] = "Macaco";
+
+			document.write(listaCoisas["frutas"][0], "<br/>" ,listaCoisas["animais"][3]);
+
+			document.write("<br/>");
+			document.write("*********************************************************");
+			document.write("<br/>");
+			document.write("Outra forma de Declaração de Arrays: (ver código)");
+			document.write("<br/>");
+
+			var listaCoisas = Array();
+
+			listaCoisas['frutas'] = Array('Banana', 'Maçã', 'Mamão', 'Laranja');
+			listaCoisas['animais'] = Array('Gato', 'Cachorro', 'Pássaro', 'Macaco');
+
+			document.write(listaCoisas['frutas'][1], '<br/>', listaCoisas['animais'][2]);
+
+			document.write("<br/>");
+			document.write("*********************************************************");
+			document.write("<br/>");
+			document.write("Criando uma função com Arrays: (ver código)");
+			document.write("<br/>");
+
+			let coisas = ['cadeira', 'mesa', new Date(), 'computador'];
+
+				coisas.forEach(function(valor, indice){
+
+					console.log(indice, valor);
+				});
+
+				document.write(coisas[2].toLocaleDateString('pt-br'));
+
+
+
+		</script>
+	</head>
+
+	<body>
+		
+
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+
+
+</html>

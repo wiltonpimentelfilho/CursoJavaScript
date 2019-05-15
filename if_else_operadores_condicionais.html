@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>If_Else (Controle de decisão) com Operadores Condicionais</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+			
+			document.write('If_Else com Operadores Condicionais:');
+			document.write('<br/>');
+			document.write('*************************************');
+			document.write('<br/>');
+
+			var num1 = prompt('Entre com o primeiro valor:');
+			var num2 = prompt('Entre com o segundo valor:');
+			var str  = 'trezentos';
+
+			// ==
+
+			if(num1 == num2) {
+				document.write('Valores Iguais!');
+			} else{
+				document.write('Valores Diferentes!');
+			}
+			
+			document.write('<br/>');
+			
+			
+			// === Verifica se o valor e o tipo são idênticos:
+
+			if (num1 === num2) {
+				document.write('Valor e Tipo Iguais!');
+			} else{
+				document.write('Valor e Tipo Diferentes!');
+			}
+
+			document.write('<br/>');
+			
+			// != Compara se dois valores são diferentes:
+
+			if (num1 != num2) {
+				document.write('Números Diferentes!');
+			} else{
+				document.write('Números Iguais!');
+			}
+
+			document.write('<br/>');
+
+			// >= ou <=
+
+			var nota = prompt('Entre com a nota do aluno:');
+			var media = 7;
+
+			if (nota >= media){
+					document.write('Aluno Aprovado!')
+			} else{
+				document.write('Aluno em Recuperação!')
+			}
+
+
+		</script>
+	</head>
+
+	<body>
+		
+
+
+		<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+</html>

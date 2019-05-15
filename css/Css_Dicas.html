@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dicas CSS</title>
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="dicas.css">
+	</head>
+
+	<body>
+		<div id="cabecalho">
+			<h1 style="color: black;"> Página de Dicas sobre o uso do Cascading Style Sheets</h1>
+			<!-- A tag h1 recebe como parâmetro a opçãp "style", definindo cor, borda, etc. Esta opção, quando utilizada dentro
+			 	do próprio arquivo "html" chama-se de "inline CSS", que se sobrepõe ao arquivo ".css". -->
+		</div>
+		<br>
+		
+		<div>
+			<h2 class="seletores">Seletores CSS</h2>
+			<p style="font-size: 20px;">Utilizando os seletores css fica mais fácil e prático formatar os arquivos html. Ex:<br>
+				<p id="um">h1 { <br>
+				   		color: black; <br>
+				   		border: 1px solid blue; <br>
+				   		text-align: center;<br>
+				   	}
+				</p>
+			</p>
+		</div>
+
+		<div>
+			<h2 class="classesIds">Classes e IDs = class e ID</h2>
+			<p>Para escrevermos uma classe adicionamos o "." seguido do nome da classe, seguida de "{ }", contendo os atributos que desejarmos utilizar.<br>
+			   Para criarmos um ID, utilizamos a "#" precedido do nome do ID, seguido de "{ }", contendo os atributos que desejarmos utilizar.<br>
+			Obs: Você pode utilizar as class, os ids, os styles, junto as tags diretamente no arquivo "html". A isso chamamos de "Inline CSS".</p>
+		</div>
+
+
+		<script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+		<script> $(document).ready(function(){ });</script>
+	</body>
+
+
+
+</html>

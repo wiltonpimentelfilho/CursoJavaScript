@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Trabalhando com datas</title>
+	<script type="text/javascript">
+		
+		var meses = ['janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+
+		var inicio = Date.now();
+
+		var data = new Date(1966, 4, 30);
+
+		var dataAnos = (((((inicio /60) /60) /24) /365) /1000);
+		
+		
+		console.log((inicio) + "  Milisegundos");
+		console.log(data);
+		console.log(data.toDateString());
+		console.log(inicio.toLocaleString());
+		console.log((Math.floor(dataAnos)) + " anos, desde a data linux.");
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

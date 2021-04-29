@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String e o Método charAt</title>
+	<script type="text/javascript">
+		
+		var frase = "Wilton José PImentel Filho";
+		var primeiraLetra = frase.charAt(0);
+		console.log(primeiraLetra);
+
+		var letra = "";
+		var primeira_palavra = "";
+
+		var i = 0;
+		while (letra != ' '){
+
+			letra = frase.charAt(i);
+			primeira_palavra += letra;//Soma a variável à sua esquerda o valor apresentado à sua direita.
+			i++
+		}
+
+		console.log(primeira_palavra);		
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Funções: Tipos e Exemplos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript">
+
+		function nomeFuncao( ){
+    		console.log("Texto que será exibido no console do navegador.");
+		}
+		nomeFuncao();
+
+		function converterTemp(celsius){
+			var fahrenheit = (celsius * 1.8)+32;
+			return fahrenheit;
+		}
+		var tempFah = converterTemp(30);
+		console.log(tempFah);
+
+
+	</script>
+</head>
+<body>
+	<div class="container-fluid"><!-- o container-fluid cria uma área responsiva que ocupa toda a tela (também conhecido como full width). -->
+
+		<div class="jumbotron"><!-- o container-fluid cria uma área responsiva que ocupa toda a tela (também conhecido como full width). -->
+
+			<h1 style="text-align: center;">Funções: Tipos e Exemplos</h1>
+
+		</div>
+
+		<div row>
+			<h3>Existem dois tipos de funções:</h3>
+			<h5>1. Funções de Execução;</h5>
+			<h5>2. Funções de Retorno.</h5>
+			<hr>
+			<h3>1. Funções de execução</h3>
+			<h5>. Executa uma operação, seja ela qual for e não necessita de retorno.</h5>
+			<h5> Exemplo:</h5>
+				<p style="color: blue; font-size: 18px">function nomeFuncao( ){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;console.log("Texto que será exibido no console.");<br>
+					}<br>
+
+					nomeFuncao( ); <span style="color: red;"><-- "Aqui estamos chamando a execução dessa função."</span></p>
+
+			<hr>
+
+		</div>
+
+		<div row>
+			<h3>2. Funções de Retorno.</h3>
+			<h5>. São valores retornados pela função quando são concluídos, por exemplo, um cálculo.</h5>
+			<h5> Exemplo:</h5>
+				<p style="color: blue; font-size: 18px">function converterTemp(celsius){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;var fahrenheit = (celsius * 1.8) + 32;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;return fahrenheit;<br>
+					}<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;var tempFah = converterTemp(30); <span style="color: red;"><-- "Aqui estamos chamando a execução dessa função."</span><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;console.log(tempFah); <span style="color: red;"><-- "Aqui estamos exibindo o resultado no conlole do navegador."</span></p>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Jogo</title>
+</head>
+<body>
+	<canvas id="folha" width="600" height="400"></canvas>
+	
+
+
+	<script type="text/javascript">
+
+		window.onload = function() {
+			setInterval(executar, 1000 / 30);
+		}
+
+		
+		var posicaoBolaX = 20;
+		var posicaoBolaY = 20;
+		var velocidadeBolaPosicaoX = 3;
+		var velocidadeBolaPosicaoY = 3;
+
+	    /* function bolaMovimento(){
+				areaDesenho.beginPath();
+				areaDesenho.arc(posicaoBolaX, posicaoBolaY, diametroBola, 0, 2 * Math.PI, true);
+				areaDesenho.closePath();
+				areaDesenho.fill();
+		}
+
+		var bola = bolaMovimento();
+		*/
+
+		function executar(){
+
+			var folhaDesenho = document.getElementById("folha");
+			var areaDesenho = folhaDesenho.getContext("2d");
+
+			var larguraCampo = 600;
+			var alturaCampo = 400;
+			var larguraLinha = 5;
+			var alturaRaquete = 60;
+			var posicaoRaquete1 = 160;
+			var posicaoRaquete2 = 160;
+
+			var diametroBola = 10;
+
+						
+			//Campo 
+			areaDesenho.fillStyle = "#286047";
+			areaDesenho.fillRect(0, 0, larguraCampo, alturaCampo); /* (X, Y, Largura, Altura) -  Posição do campo em relação ao canvas */
+
+			areaDesenho.fillStyle = "#ffffff";
+			
+			//Linha que divide o campo
+			areaDesenho.fillRect(larguraCampo/2 - larguraLinha/2, 0, larguraLinha, alturaCampo);
+			
+			//Raquete da Esquerda
+			areaDesenho.fillRect(5, posicaoRaquete1, larguraLinha, alturaRaquete);
+			
+			//Raquete da Direita
+			areaDesenho.fillRect(590, posicaoRaquete2, larguraLinha, alturaRaquete);
+
+			
+			areaDesenho.beginPath();
+			areaDesenho.arc(posicaoBolaX, posicaoBolaY, diametroBola, 0, 2 * Math.PI, true);
+			areaDesenho.closePath();
+			areaDesenho.fill();
+		
+
+			posicaoBolaX = posicaoBolaX + velocidadeBolaPosicaoX;
+			posicaoBolaY = posicaoBolaY + velocidadeBolaPosicaoY;
+		    
+		    
+		    if (posicaoBolaY < 0 && velocidadeBolaPosicaoY < 0) {
+		    	velocidadeBolaPosicaoY = -velocidadeBolaPosicaoY;
+		    }
+			  
+			if (posicaoBolaY > alturaCampo && velocidadeBolaPosicaoY > 0) {
+				velocidadeBolaPosicaoY = -velocidadeBolaPosicaoY;
+			}
+
+			if (posicaoBolaX < 0 && velocidadeBolaPosicaoX < 0) {
+				velocidadeBolaPosicaoX = - velocidadeBolaPosicaoX;
+			}
+
+			if (posicaoBolaX > larguraCampo && velocidadeBolaPosicaoX > 0) {
+				velocidadeBolaPosicaoX = - velocidadeBolaPosicaoX;
+			}
+		
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Função JavaScript - Escreve na Tela</title>
+		<meta charset="utf-8">
+
+		<script type="text/javascript">
+			
+			function textoCarregado(){
+
+				// O innerHTML permite escrever algo dentro de um elemento.
+
+				escrita.innerHTML = 'Curso HTML5 Essencial';
+
+			}
+
+			window.onload = textoCarregado;
+
+			function trocaTexto(){
+
+				document.getElementById('escrita').innerHTML = "Texto Alterado!";
+
+			}
+
+			function trocaTextoNovamente(){
+
+				document.getElementById('escrita').innerHTML ='Texto alterado pela segunda vez!';
+			}
+
+		
+		</script>
+	</head>
+	<body>
+		<p id="escrita"></p>
+		<button id="botao" onclick="trocaTexto()">Clique aqui para alterar texto</button>
+		<button id="botao" onmouseover="trocaTextoNovamente()">Apenas passe o mouse aqui e veja o que acontece com o texto</button>
+
+	</body>
+	</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Função Matemática Exemplo</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript">
+
+
+			function calcDiaria(){
+
+				var salario = document.getElementById('salario').value;
+
+				if (salario =='' || salario == null) {
+					alert("Digite um valor válido para a operação de cálculo da diária!")
+					return false;
+				}
+				
+					salario = parseFloat(salario);
+					diaria = Math.round(salario/30);
+					
+					alert("O valor de sua diária é de R$" + diaria + " Reais.");
+					
+
+			}
+				
+
+		</script>
+		
+	</head>
+
+	<body>
+
+		<div class="jumbotron">
+			
+			<h1 style="text-align: center">Função matemática Cálculo da Diária</h1>
+
+		</div>
+
+		<div>
+			
+			<label style="margin-left: 50px; font-size: 18px">Digite o valor de seu salário no campo abaixo:</label>
+			<input type="number" id="salario" class="form-control" placeholder="Entre com o valor de seu salário!">
+			<br><br>
+			<button type="submit"class="btn btn-lg btn-primary" style="margin-left:800px;" onclick="calcDiaria()">Calcular</button>
+
+
+
+		</div>
+
+		
+	</body>
+</html>

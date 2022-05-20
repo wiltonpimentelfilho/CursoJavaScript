@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SweetAlert</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">	
+
+	<script src="https://code.jquery.com/jquery-3.4.0.js"  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+	<script>
+		alert('Alerta normal, com javascript!');
+	</script>
+	
+</head>
+<body>
+	
+	<div class="alerta sweet mb-5 mt-5">
+		<div class="container">
+			<button class="btn btn-info" style="width: 100px; height: 50px; border:2px; border-radius: 15px;">SweetAlert</button>			
+		</div>
+	</div>
+	
+	<div class="alerta jQuery">
+		<div class="container">
+			<button class="btn btn-info" style="width: 100px; height: 50px; border:2px; border-radius: 15px;">jQuery</button>			
+		</div>
+	</div>
+
+</body>
+
+	<script type="text/javascript">
+		document.querySelector('.alerta.jQuery button').onclick =
+			function() {
+				alert('Opaaaa.... mensagem de erro clicando no botão jQuery!');
+			}
+
+
+		document.querySelector('.alerta.sweet button').onclick = 
+			function(){
+				swal('Opa!', 'Exemplo de mensagem de erro com SweetAlert!', 'error');
+			}
+
+	</script>
+</html>

@@ -1,14 +1,22 @@
 
-var vetor = [];
-
 function lotofacil() {
-  
-    for(i=0; i < 15; i++){     
-        sorteio = Math.floor((Math.random() * 25) + 1); //Retorna um número aleatório entre 1 e 25
-        console.log(sorteio);
 
-    //    while(vetor.indexOf(sorteio) >= 0);
-    //    vetor.push(sorteio);
-    }
+    var sorteio;
+
+    var vetor = [];
+
+    var i = 0;
+  
+    while (i < 15){
+        
+    //  random = (min, max) => Math.floor(Math.random() * (max - min) + min)    
+        sorteio = Math.floor(1 + (Math.random() * 24)); //Retorna um número aleatório entre 1 e 25
+        
+        if (vetor.indexOf(sorteio) < 0) {
+            vetor.push(sorteio);
+            i= i + 1;
+        }
+       }
+    return vetor;
 }
-lotofacil();
+console.log(lotofacil());

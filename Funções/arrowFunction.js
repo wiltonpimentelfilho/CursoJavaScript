@@ -16,3 +16,13 @@ console.log(soma(4, 7));
 
 const subtrai = (a, b) => (a-b)
 console.log(subtrai(8,2));
+
+//Arrow function com operador ternário ' ? '.
+//O Operador ternário é composto de 3 partes:
+// . A primeira parte é uma expressão que irá retornar verdadeiro ou falso: 'nota>=7';
+// . A segunda parte que será retornada se a expressão for verdadeira: 'Aprovado';
+// . A terceira parte que será retornada se a expressão for falsa; 'Reprovado'
+
+const statusAluno = nota => nota>=7 ? 'Aprovado' : 'Reprovado'
+
+console.log(statusAluno(7))

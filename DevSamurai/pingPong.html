@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <canvas id="folha" width="800" height="500"></canvas>
+
+        <script>
+            var folhaDesenho = document.getElementById("folha");
+            var areaDesenho = folhaDesenho.getContext("2d");
+            var metadeCampo = folhaDesenho.getContext('2d');
+            var bola = folhaDesenho.getContext('2d');
+            var raquete1 = folhaDesenho.getContext('2d');
+            var raquete2 = folhaDesenho.getContext('2d');
+
+            areaDesenho.fillStyle = '#286047';
+            areaDesenho.fillRect(0, 0, 800, 500);
+            
+            metadeCampo.fillStyle = 'white';
+            metadeCampo.fillRect( 398, 0, 4 , 500);
+           
+            bola.fillRect(1, 1, 10, 10);
+
+            raquete1.fillRect(1, 200, 20, 100);
+            raquete2.fillRect(780, 200, 19, 100);
+
+        </script>
+    </body>
+</html>
